@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+  color: azure;
+  font-family: monospace;
+  font-size: 38px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  border: 1px black solid;
+  box-sizing: border-box;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  transition: all 0.7s;
+  transform: rotateY(0deg);
+  transform-style: initial;
+}
+
+.spin {
+  background: rgb(190, 199, 110);
+  transition: all 1.2s;
+  transform-style: initial;
+  transform: rotateY(360deg);
+}
+
+.match {
+  background: rgb(204, 89, 12);
+  transition: all 1.2s;
+}
+
+.correct {
+  transform: scale(0.6, 0.6);
+  z-index: 1;
+}
+
+.different {
+  background: rgb(236, 91, 91);
+  transition: all 1.2s;
+}
+
+.win{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0px;
+  opacity: 0;
+}
+
+#newGame{
+  margin: 5px;
+  padding: 5px;
+}
