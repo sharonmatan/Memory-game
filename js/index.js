@@ -26,8 +26,8 @@ function playOn(locationOfCards) {
   for (let i = 0; i < locationOfCards.length; i++) {
     let card = document.getElementsByClassName("card")[i];
     let image = document.createElement("img");
-    image.style.height = "90px";
-    image.style.width = "90px";
+    image.style.height = "85px";
+    image.style.width = "85px";
     image.style.visibility = "hidden";
     image.src = `./images/pic${locationOfCards[i]}.png`;
     card.appendChild(image);
