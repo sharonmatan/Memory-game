@@ -2,9 +2,7 @@
  
 5th Assignment for Appleseed's Academy Coding Bootcamp (Week 5).
 
-In this assignment, I created a cool Memory Game!
-
-In every game, the cards are generated dynamically and the user can choose a preferable theme to play with.
+In this assignment, I created a cool Memory Game when the cards are generated dynamically.
 
 The assignment is based on the following subjects:
 
